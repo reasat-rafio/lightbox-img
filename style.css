@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 5px;
+}
+
+.grid img {
+    width: 250px;
+}
+
+#lightbox {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
